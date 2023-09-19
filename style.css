@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+  --Orange: hsl(25, 97%, 53%);
+  --light-blue: hsl(213deg, 20%, 22%);
+  --fontText: 15px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Very-Dark-Blue);
+  font-family: "Overpass", sans-serif;
+}
+.container {
+  width: 370px;
+  background-color: var(--Dark-Blue);
+  display: flex;
+  flex-direction: column;
+  padding: 35px 25px;
+  border-radius: 25px;
+}
+.title {
+  padding: 12px;
+  background-color: var(--light-blue);
+  width: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.content h1 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: var(--White);
+}
+.content p {
+  font-size: var(--fontText);
+  line-height: 1.5;
+  word-spacing: 1.4;
+  color: var(--Medium-Grey);
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 22px;
+}
+.buttons div {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: var(--light-blue);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: var(--Medium-Grey);
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+.buttons div:hover {
+  background-color: var(--Medium-Grey);
+  color: var(--White);
+}
+.submitBtn {
+  padding: 8px 30px;
+  background-color: var(--Orange);
+  border-radius: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--White);
+  font-weight: 600;
+  cursor: pointer;
+}
+.submitBtn:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+}
+.thanks {
+  display: none;
+  flex-direction: column;
+  width: 350px;
+  background-color: var(--Dark-Blue);
+  padding: 35px 20px;
+  border-radius: 25px;
+}
+
+.thanks h1 {
+  color: var(--White);
+}
+.thanks .message {
+  color: var(--Orange);
+  display: flex;
+  width: 200px;
+  margin: auto;
+  padding: 6px;
+  border-radius: 15px;
+  background-color: var(--light-blue);
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.thanks .text p {
+  color: var(--Light-Grey);
+  font-size: 15px;
+}
+.thanks .img {
+  padding: 10px 0;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.text h1 {
+  text-align: center;
+  font-size: 29px;
+  margin-bottom: 10px;
+}
+.text p {
+  text-align: center;
+  line-height: 1.5;
+  word-spacing: 1.4;
+}
+.btn {
+  background-color: var(--Light-Grey);
+}
